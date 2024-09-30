@@ -43,8 +43,10 @@ class _RedirectPageState extends State<RedirectPage> {
 
             if (code != null) {
               widget.onredirectAttep(uri);
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const HomeScreen()));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const ClassLinkHomeScreen()));
             }
           },
           onWebResourceError: (WebResourceError error) {

@@ -3,16 +3,16 @@ import 'package:flutter_application_1/features/classlink/repo.dart';
 import 'package:flutter_application_1/utils/extentions/logger.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({
+class ClassLinkHomeScreen extends StatefulWidget {
+  const ClassLinkHomeScreen({
     super.key,
   });
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<ClassLinkHomeScreen> createState() => _ClassLinkHomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _ClassLinkHomeScreenState extends State<ClassLinkHomeScreen> {
   String? token;
   dynamic userInfo;
   @override

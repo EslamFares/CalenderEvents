@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/features/classlink/screens/login_screen.dart';
+import 'package:flutter_application_1/core/get_it.dart';
+import 'features/home/presentation/screens/home_screen.dart';
 
-void main() {
+void main() async {
+  await getitSetup();
   runApp(const MyApp());
 }
 
@@ -26,9 +28,10 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      // home: const HomeView(),
+      // home: const LoginScreen(),
+      home: const HomeScreen(),
       // home: const TableEventsExample(),
-      home: const LoginScreen(),
+      // home: const LoginScreen(),
     );
   }
 }
