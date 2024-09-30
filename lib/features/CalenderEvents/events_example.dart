@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/CalenderEvents/func/day_checker.dart';
-import 'package:flutter_application_1/CalenderEvents/model/event_model.dart';
-import 'package:flutter_application_1/CalenderEvents/widgets/month_title.dart';
+import 'package:flutter_application_1/features/CalenderEvents/func/day_checker.dart';
+import 'package:flutter_application_1/features/CalenderEvents/model/event_model.dart';
+import 'package:flutter_application_1/features/CalenderEvents/widgets/month_title.dart';
+import 'package:flutter_application_1/utils/extentions/logger.dart';
 import 'package:intl/intl.dart';
 import 'package:table_calendar/table_calendar.dart';
 
@@ -193,7 +194,7 @@ class TableEventsExampleState extends State<TableEventsExample> {
                             borderRadius: BorderRadius.circular(12.0),
                           ),
                           child: ListTile(
-                            onTap: () => debugPrint(_getEventsForDay(
+                            onTap: () => Logger(_getEventsForDay(
                                     _selectedDay ?? DateTime.now())[index]
                                 .title),
                             title: Text(
