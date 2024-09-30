@@ -35,7 +35,9 @@ vars:
 #! install
 #1 dart pub global activate mason_cli
 #2 dart pub global activate mason
-
+## if error show in brick folder
+  # open dart setting and add this ==>
+  # "dart.analysisExcludedFolders": ["bricks"]
 #! sec 
 #1  mason init  
 #2 past folder bricks in app folders  
